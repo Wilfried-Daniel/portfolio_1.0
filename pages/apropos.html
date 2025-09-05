@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/output.css" />
+    <title>A propos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBARRE MOBILE  -->
+    <nav
+      class="w-full bg-white shadow-xl/10 dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 lg:hidden"
+    >
+      <div
+        class="relative w-full max-w-[1440px] px-3 py-3 mx-auto flex items-center justify-between"
+      >
+        <!-- logo -->
+        <div class="text-indigo-900 text-lg font-bold dark:text-orange-400">
+          Wilfried Bohoussou
+        </div>
+
+        <!-- l'icone hamburger du menu  -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          id="mobile"
+          class="text-indigo-900 dark:text-gray-50 cursor-pointer lg:hidden"
+        >
+          <path
+            fill="currentColor"
+            d="M3 3h3v3H3zm7.5 0h3v3h-3zM18 3h3v3h-3zM3 10.5h3v3H3zm7.5 0h3v3h-3zm7.5 0h3v3h-3zM3 18h3v3H3zm7.5 0h3v3h-3zm7.5 0h3v3h-3z"
+          />
+        </svg>
+
+        <!-- élements du menu  -->
+        <div id="list-mobile" class="w-full hidden absolute top-12 right-0 left-0 py-1 z-1 bg-white dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 md:py-2">
+          <!-- pour le style en mode mobile et éviter les conflits avec la classe hidden de <div id='list-mobile'> -->
+          <div class="w-full flex flex-col items-center gap-3 md:gap-4">
+            <ul
+              class="flex flex-col items-center justify-between gap-3 text-gray-500 text-sm font-medium cursor-pointer dark:text-gray-50 md:text-lg"
+            >
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/index.html">Accueil</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/competences.html">Compétences</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/realisations.html">Réalisations</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400 data-[active=true]:after:w-full"
+              >
+                <a href="/pages/apropos.html">A propos</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- dark mode -->
+            <div class="flex items-center justify-between gap-6 text-white">
+              <p class="text-gray-900 text-sm font-medium dark:text-gray-50 md:text-lg">
+                Mode sombre
+              </p>
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input
+                  id="mobile-dark-toggle"
+                  class="sr-only peer"
+                  value=""
+                  type="checkbox"
+                />
+                <div
+                  class="peer bg-gradient-to-r from-blue-400 to-violet-600 rounded-full outline-none duration-500 after:duration-300 w-6 h-2 peer-checked:bg-gradient-to-r peer-checked:from-orange-500 peer-checked:to-orange-900 peer-focus:outline-none after:content-[''] after:rounded-full after:absolute after:outline-none after:h-3 after:w-3 after:bg-gray-300 after:-top-0.5 after:-left-2 after:flex after:justify-center after:items-center after:border-white peer-checked:after:translate-x-7"
+                ></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBARRE PC ET ORDI BUREAU -->
+    <header
+      class="w-full bg-white shadow-xl/10 dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 max-lg:hidden"
+    >
+      <div
+        class="w-full max-w-[1440px] px-5 py-4 mx-auto flex items-center justify-between"
+      >
+        <!-- logo -->
+        <div class="text-indigo-900 text-2xl font-bold dark:text-orange-400">
+          Wilfried Bohoussou
+        </div>
+        <!-- élements du menu  -->
+        <div>
+          <ul
+            class="flex items-center justify-between gap-5 text-gray-500 text-lg font-medium cursor-pointer dark:text-gray-50"
+          >
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/index.html">Accueil</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/competences.html">Compétences</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/realisations.html">Réalisations</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400 data-[active=true]:after:w-full"
+            >
+              <a href="/pages/apropos.html">A propos</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- dark mode -->
+        <div class="flex items-center justify-between gap-6 text-white">
+          <p class="text-gray-900 text-md font-medium dark:text-gray-50">
+            Mode sombre
+          </p>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input
+              id="dark-toggle"
+              class="sr-only peer"
+              value=""
+              type="checkbox"
+            />
+            <div
+              class="peer bg-gradient-to-r from-blue-400 to-violet-600 rounded-full outline-none duration-500 after:duration-300 w-11 h-4 peer-checked:bg-gradient-to-r peer-checked:from-orange-500 peer-checked:to-orange-900 peer-focus:outline-none after:content-[''] after:rounded-full after:absolute after:outline-none after:h-5 after:w-5 after:bg-gray-300 after:-top-0.5 after:-left-2 after:flex after:justify-center after:items-center after:border-white peer-checked:after:translate-x-10"
+            ></div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="w-full py-10 bg-gray-200 dark:bg-gray-800 max-lg:py-8">
+        <section class="w-full max-w-[1280px] mx-auto max-md:px-1 max-lg:px-3">
+          <!-- photo et texte  -->
+          <div class="flex items-center justify-center gap-15 max-lg:flex-col max-md:gap-5 max-lg:gap-10">
+            <!-- photo  -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              class="w-[350px] h-[350px] border-5 border-indigo-900 rounded-full overflow-hidden hover:scale-105 transition-all duration-300 dark:border-orange-500 max-md:w-[200px] max-md:h-[200px] max-lg:w-[280px] max-lg:h-[280px]"
+            >
+              <img
+                src="../assets/images/moi.jpg"
+                alt="photo d'identite"
+                class="object-cover w-full h-full"
+              />
+            </div>
+
+            <!-- texte -->
+            <div class="w-[50%] max-lg:w-[90%] max-lg:mx-auto" data-aos="fade-left" data-aos-duration="1500">
+              <!-- titres -->
+              <h2
+                class="text-2xl text-indigo-900 font-bold text-left mb-4 dark:text-orange-500 max-md:text-xl max-lg:text-center"
+              >
+                Mon parcours et ma passion
+              </h2>
+              <p
+                class="text-justify text-[15px] font-[montserrat] font-medium text-gray-950 dark:text-gray-50 max-lg:text-sm"
+              >
+                Je suis <strong>Wilfried Daniel Bohoussou</strong>, un passionné
+                de technologie et de création digitale. Mon parcours a commencé
+                dans <strong>la finance et la comptabilité,</strong> où j’ai
+                appris la rigueur, l’analyse et le sens du détail. Mais très
+                vite, j’ai ressenti le besoin d’aller plus loin : construire,
+                innover et donner vie à des idées.<br /><br />
+                Aujourd’hui, je me consacre au
+                <strong>développement web full-stack</strong> : du design
+                d’interfaces modernes et responsives avec
+                <strong>HTML, CSS, JavaScript, TailwindCSS,</strong> jusqu’au
+                développement d’applications robustes en
+                <strong>PHP, Laravel, Python et Flask.</strong> J’aime relever
+                des défis, apprendre de nouvelles technologies et transformer
+                des concepts en solutions concrètes.<br /><br />
+                En dehors du code, je suis un passionné de
+                <strong>basket-ball</strong>, sport qui m’a appris l’esprit
+                d’équipe, la discipline et la persévérance. Trois valeurs que
+                j’applique aussi dans mon travail de développeur. <br /><br />
+                <strong
+                  >Mon objectif : collaborer sur des projets qui allient
+                  innovation, performance et impact positif.</strong
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- le footer  -->
+    <footer
+      class="w-full bg-white shadow-xl/10 flex flex-col gap-5 items-center dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 max-md:gap-2"
+    >
+      <div
+        class="w-full max-w-[1440px] px-5 py-10 mx-auto flex items-start justify-center gap-70 max-md:px-2 max-md:py-5 max-lg:gap-20"
+      >
+        <!-- nom et icones RS  -->
+        <div class="flex flex-col items-start gap-5 max-md:hidden">
+          <div class="text-indigo-900 text-3xl font-bold dark:text-orange-400">
+            Wilfried Bohoussou
+          </div>
+          <!-- reseaux sociaux  -->
+          <div class="flex items-center justify-start gap-5">
+            <!-- github  -->
+            <a
+              href="https://github.com/Wilfried-Daniel" target="_blank"
+              class="hover:-translate-y-1 transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 dark:text-gray-50"
+              >
+                <mask id="SVGtXXaGeHA" width="24" height="24" x="0" y="0">
+                  <g fill="#fff">
+                    <ellipse cx="9.5" cy="9" rx="1.5" ry="1" />
+                    <ellipse cx="14.5" cy="9" rx="1.5" ry="1" />
+                  </g>
+                </mask>
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-dasharray="32"
+                    stroke-dashoffset="32"
+                    d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      dur="0.7s"
+                      values="32;0"
+                    />
+                  </path>
+                  <path
+                    stroke-dasharray="10"
+                    stroke-dashoffset="10"
+                    d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
+                  >
+                    <animate
+                      attributeName="d"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
+                    />
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.8s"
+                      dur="0.2s"
+                      values="10;0"
+                    />
+                  </path>
+                </g>
+                <rect
+                  width="8"
+                  height="4"
+                  x="8"
+                  y="11"
+                  fill="currentColor"
+                  mask="url(#SVGtXXaGeHA)"
+                >
+                  <animate
+                    attributeName="y"
+                    dur="10s"
+                    keyTimes="0;0.45;0.46;0.54;0.55;1"
+                    repeatCount="indefinite"
+                    values="11;11;7;7;11;11"
+                  />
+                </rect>
+              </svg>
+            </a>
+            <!-- linkedin  -->
+            <a
+              href="https://www.linkedin.com/in/wilfried-daniel-bohoussou-05b713323/" target="_blank"
+              class="hover:-translate-y-1 transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 dark:text-gray-50"
+              >
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                  fill="currentColor"
+                  fill-opacity="0"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="fill-opacity"
+                    dur="0.15s"
+                    values="0;1"
+                  />
+                </circle>
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    stroke-dasharray="12"
+                    stroke-dashoffset="12"
+                    d="M4 10v10"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.15s"
+                      dur="0.2s"
+                      values="12;0"
+                    />
+                  </path>
+                  <path
+                    stroke-dasharray="12"
+                    stroke-dashoffset="12"
+                    d="M10 10v10"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.45s"
+                      dur="0.2s"
+                      values="12;0"
+                    />
+                  </path>
+                  <path
+                    stroke-dasharray="24"
+                    stroke-dashoffset="24"
+                    d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.65s"
+                      dur="0.2s"
+                      values="24;0"
+                    />
+                  </path>
+                </g>
+              </svg>
+            </a>
+            <!-- facebook  -->
+            <a
+              href="https://www.facebook.com/wilfried.dani.71" target="_blank"
+              class="hover:-translate-y-1 transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 dark:text-gray-50"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    stroke-dasharray="24"
+                    stroke-dashoffset="24"
+                    d="M17 4l-2 0c-2.5 0 -4 1.5 -4 4v12"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      dur="0.4s"
+                      values="24;0"
+                    />
+                  </path>
+                  <path stroke-dasharray="8" stroke-dashoffset="8" d="M8 12h7">
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.5s"
+                      dur="0.2s"
+                      values="8;0"
+                    />
+                  </path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- infos et contact  -->
+        <div class="flex flex-col items-start gap-5">
+          <h4 class="text-2xl text-gray-900 font-medium dark:text-gray-50 max-md:text-center">
+            Informations de contact
+          </h4>
+          <ul class="space-y-2">
+            <!-- telephone -->
+            <li class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                class="w-6 h-6 text-gray-600 dark:text-gray-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="M84.96 70.237c-.167-1.032-.814-1.914-1.783-2.438l-14.335-8.446l-.118-.066a4.26 4.26 0 0 0-1.937-.45c-1.201 0-2.348.455-3.144 1.253l-4.231 4.233c-.181.172-.771.421-.95.43c-.049-.004-4.923-.355-13.896-9.329c-8.957-8.955-9.337-13.844-9.34-13.844c.005-.25.251-.838.426-1.02l3.608-3.607c1.271-1.274 1.652-3.386.898-5.022L32.19 16.938c-.579-1.192-1.704-1.928-2.952-1.928c-.883 0-1.735.366-2.401 1.031l-9.835 9.813c-.943.938-1.755 2.578-1.932 3.898c-.086.631-1.831 15.693 18.819 36.346C51.42 83.627 65.09 84.989 68.865 84.989a11 11 0 0 0 1.376-.071c1.316-.176 2.954-.986 3.891-1.925l9.827-9.826c.802-.806 1.168-1.871 1.001-2.93"
+                />
+              </svg>
+              <p class="text-sm text-gray-700 font-medium dark:text-gray-300">
+                (+225) 07 576 208 99
+              </p>
+            </li>
+            <!-- email -->
+            <li class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-gray-600 dark:text-gray-400"
+              >
+                <g fill="currentColor">
+                  <path
+                    d="M22 7.535V17a3 3 0 0 1-2.824 2.995L19 20H5a3 3 0 0 1-2.995-2.824L2 17V7.535l9.445 6.297l.116.066a1 1 0 0 0 .878 0l.116-.066z"
+                  />
+                  <path
+                    d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a3 3 0 0 1 2.354-1.42L5 4z"
+                  />
+                </g>
+              </svg>
+              <p class="text-sm text-gray-700 font-medium dark:text-gray-300">
+                wilfriedkouassi471@gmail.com
+              </p>
+            </li>
+            <!-- adresse -->
+            <li class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-gray-600 dark:text-gray-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+                />
+              </svg>
+              <p class="text-sm text-gray-700 font-medium dark:text-gray-300">
+                Cocody Abidjan, Côte d'ivoire
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright  -->
+      <div class="font-semibold pt-1 pb-3 dark:text-gray-200 max-md:text-center max-md:text-sm">
+        2025 &copy; - Tous droits réservés, design by WILFRIED DANIEL BOHOUSSOU
+      </div>
+    </footer>
+
+    <!-- DARK MODE  -->
+    <script src="/assets/js/darkmobile.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init -->
+    <script src="/assets/js/aos.js"></script>
+    <!-- menu mobile  -->
+     <script src="/assets/js/menu-mobile.js"></script>
+  </body>
+</html>

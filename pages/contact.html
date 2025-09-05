@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/output.css" />
+    <title>Contact</title>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAVBARRE MOBILE  -->
+    <nav
+      class="w-full bg-white shadow-xl/10 dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 lg:hidden"
+    >
+      <div
+        class="relative w-full max-w-[1440px] px-3 py-3 mx-auto flex items-center justify-between"
+      >
+        <!-- logo -->
+        <div class="text-indigo-900 text-lg font-bold dark:text-orange-400">
+          Wilfried Bohoussou
+        </div>
+
+        <!-- l'icone hamburger du menu  -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          id="mobile"
+          class="text-indigo-900 dark:text-gray-50 cursor-pointer lg:hidden"
+        >
+          <path
+            fill="currentColor"
+            d="M3 3h3v3H3zm7.5 0h3v3h-3zM18 3h3v3h-3zM3 10.5h3v3H3zm7.5 0h3v3h-3zm7.5 0h3v3h-3zM3 18h3v3H3zm7.5 0h3v3h-3zm7.5 0h3v3h-3z"
+          />
+        </svg>
+
+        <!-- élements du menu  -->
+        <div id="list-mobile" class="w-full hidden absolute top-12 right-0 left-0 py-1 z-1 bg-white dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 md:py-2">
+          <!-- pour le style en mode mobile et éviter les conflits avec la classe hidden de <div id='list-mobile'> -->
+          <div class="w-full flex flex-col items-center gap-3 md:gap-4">
+            <ul
+              class="flex flex-col items-center justify-between gap-3 text-gray-500 text-sm font-medium cursor-pointer dark:text-gray-50 md:text-lg"
+            >
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/index.html">Accueil</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/competences.html">Compétences</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/realisations.html">Réalisations</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+              >
+                <a href="/pages/apropos.html">A propos</a>
+              </li>
+              <li
+                class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400 data-[active=true]:after:w-full"
+              >
+                <a href="/pages/contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- dark mode -->
+            <div class="flex items-center justify-between gap-6 text-white">
+              <p class="text-gray-900 text-sm font-medium dark:text-gray-50 md:text-lg">
+                Mode sombre
+              </p>
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input
+                  id="mobile-dark-toggle"
+                  class="sr-only peer"
+                  value=""
+                  type="checkbox"
+                />
+                <div
+                  class="peer bg-gradient-to-r from-blue-400 to-violet-600 rounded-full outline-none duration-500 after:duration-300 w-6 h-2 peer-checked:bg-gradient-to-r peer-checked:from-orange-500 peer-checked:to-orange-900 peer-focus:outline-none after:content-[''] after:rounded-full after:absolute after:outline-none after:h-3 after:w-3 after:bg-gray-300 after:-top-0.5 after:-left-2 after:flex after:justify-center after:items-center after:border-white peer-checked:after:translate-x-7"
+                ></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBARRE POUR PC ET ORDI BUREAU  -->
+    <header
+      class="w-full bg-white shadow-xl/10 dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 max-lg:hidden"
+    >
+      <div
+        class="w-full max-w-[1440px] px-5 py-4 mx-auto flex items-center justify-between"
+      >
+        <!-- logo -->
+        <div class="text-indigo-900 text-2xl font-bold dark:text-orange-400">
+          Wilfried Bohoussou
+        </div>
+        <!-- élements du menu  -->
+        <div>
+          <ul
+            class="flex items-center justify-between gap-5 text-gray-500 text-lg font-medium cursor-pointer dark:text-gray-50"
+          >
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/index.html">Accueil</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/competences.html">Compétences</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/realisations.html">Réalisations</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400"
+            >
+              <a href="/pages/apropos.html">A propos</a>
+            </li>
+            <li
+              class="relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all after:duration-500 hover:after:w-3/4 dark:after:bg-orange-400 data-[active=true]:after:w-full"
+            >
+              <a href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- dark mode -->
+        <div class="flex items-center justify-between gap-6 text-white">
+          <p class="text-gray-900 text-md font-medium dark:text-gray-50">
+            Mode sombre
+          </p>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input
+              id="dark-toggle"
+              class="sr-only peer"
+              value=""
+              type="checkbox"
+            />
+            <div
+              class="peer bg-gradient-to-r from-blue-400 to-violet-600 rounded-full outline-none duration-500 after:duration-300 w-11 h-4 peer-checked:bg-gradient-to-r peer-checked:from-orange-500 peer-checked:to-orange-900 peer-focus:outline-none after:content-[''] after:rounded-full after:absolute after:outline-none after:h-5 after:w-5 after:bg-gray-300 after:-top-0.5 after:-left-2 after:flex after:justify-center after:items-center after:border-white peer-checked:after:translate-x-10"
+            ></div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="w-full bg-gray-200 dark:bg-gray-800 py-8 max-md:py-5">
+        <section
+          class="w-full max-w-[1280px] mx-auto px-20 flex flex-col items-center max-md:px-1 max-lg:px-5"
+        >
+          <!-- titres -->
+          <h2
+            class="text-2xl text-indigo-900 font-bold text-center mb-6 dark:text-orange-500 max-md:text-xl max-md:mb-3"
+          >
+            Parlez-moi de vos idées
+          </h2>
+          <p
+            class="text-md text-center mb-10 font-medium text-gray-700 dark:text-gray-400 max-md:text-sm "
+          >
+            Un projet, une question ou simplement envie d’échanger ? Remplissez
+            le formulaire et je reviendrai vers vous au plus vite.
+          </p>
+
+          <!-- les infos + le formulaire  -->
+          <div class="w-full flex items-start max-md:flex-col max-md:items-center ">
+
+            <!-- partie gauche infos  -->
+            <div class="w-[40%] flex flex-col items-start gap-6 max-md:hidden max-lg:gap-4">
+              <h4 class="font-semibold text-2xl text-left dark:text-gray-50 max-lg:text-xl">
+                Mes Informations
+              </h4>
+              <!-- la div parent des icones plus adresses -->
+              <div class="flex flex-col gap-4 max-lg:gap-2">
+                <!-- ville  -->
+                <div class="flex items-center gap-3 max-lg:gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    class="w-7 h-7"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#5b666a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="16" cy="11" r="4" />
+                      <path
+                        d="M24 15c-3 7-8 15-8 15s-5-8-8-15s2-13 8-13s11 6 8 13"
+                      />
+                    </g>
+                  </svg>
+                  <span class="text-shadow-gray-800 dark:text-gray-100 max-lg:text-sm"
+                    >Cocody Abidjan, Côte d'ivoire</span
+                  >
+                </div>
+                <!-- numero -->
+                <div class="flex items-center gap-3 max-lg:gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="w-7 h-7"
+                  >
+                    <path
+                      fill="#5b666a"
+                      d="M7 6.2c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C8.52 3 9.08 3 10.2 3h3.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C17 4.52 17 5.08 17 6.2v11.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C15.48 21 14.92 21 13.8 21h-3.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C7 19.48 7 18.92 7 17.8z"
+                      opacity="0.5"
+                    />
+                    <path
+                      fill="#5b666a"
+                      d="M9.75 19a.5.5 0 0 1 .5-.5h3.5a.5.5 0 0 1 0 1h-3.5a.5.5 0 0 1-.5-.5"
+                    />
+                    <path
+                      fill="#5b666a"
+                      d="M10.17 2.25h3.66c.535 0 .98 0 1.345.03c.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073c.03.365.03.81.03 1.345v11.66c0 .535 0 .98-.03 1.345c-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27c-.365.03-.81.03-1.344.03H10.17c-.535 0-.98 0-1.345-.03c-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.2c-.172-.338-.24-.694-.27-1.074c-.03-.365-.03-.81-.03-1.345V6.17c0-.535 0-.98.03-1.345c.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 7.752 2.55c.337-.172.693-.24 1.073-.27c.365-.03.81-.03 1.345-.03M8.947 3.775c-.287.023-.424.065-.514.111a1.25 1.25 0 0 0-.547.547c-.046.09-.088.227-.111.514c-.024.296-.025.68-.025 1.253v11.6c0 .572 0 .957.025 1.252c.023.288.065.425.111.515c.12.236.311.427.547.547c.09.046.227.088.514.111c.296.024.68.025 1.253.025h3.6c.572 0 .957 0 1.252-.025c.288-.023.425-.065.516-.111a1.25 1.25 0 0 0 .546-.547c.046-.09.088-.227.111-.515c.024-.295.025-.68.025-1.252V6.2c0-.572 0-.957-.025-1.253c-.023-.287-.065-.424-.111-.514a1.25 1.25 0 0 0-.546-.547c-.091-.046-.228-.088-.515-.111a9 9 0 0 0-.637-.023l-.124.373c-.105.314-.158.472-.255.588a.8.8 0 0 1-.32.231c-.142.056-.308.056-.64.056h-2.154c-.332 0-.498 0-.64-.056a.8.8 0 0 1-.32-.23c-.097-.117-.15-.275-.255-.59l-.124-.372a9 9 0 0 0-.637.023"
+                    />
+                  </svg>
+                  <span class="text-shadow-gray-800 dark:text-gray-100 max-lg:text-sm"
+                    >(+225) 07 576 208 99</span
+                  >
+                </div>
+                <!-- mail -->
+                <div class="flex items-center gap-3 max-lg:gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="w-7 h-7"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#5b666a"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                    </g>
+                  </svg>
+                  <span class="text-shadow-gray-800 dark:text-gray-100 max-lg:text-sm"
+                    >wilfriedkouassi471@gmail.com</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- partie droite le formulaire  -->
+            <div class="w-[60%] max-md:w-[95%]">
+              <form
+                id="contact-form"
+                action=""
+                method=""
+                class="w-full flex flex-col items-start gap-8 max-md:items-center max-lg:gap-3"
+              >
+                <!-- div pour afficher si l'envoi du formulaire a reussi ou a echoué  -->
+                <div id="form-status" class="hidden"></div>
+
+                <!-- premiere ligne (nom et email)  -->
+                <div class="w-full flex items-start gap-8 max-md:flex-col max-md:items-center max-lg:gap-3">
+                  <!-- nom  -->
+                  <div class="w-[50%] max-md:w-full">
+                    <input
+                      type="text"
+                      id="nom"
+                      name="nom"
+                      placeholder="Nom"
+                      class="w-full p-3 text-gray-700 rounded-[10px] placeholder:text-gray-700 outline-none border-2 border-indigo-800 dark:border-orange-500 dark:placeholder:text-gray-400 dark:text-gray-300 max-md:p-2 text-sm"
+                      required
+                    />
+                    <div id="nom-error" class="text-red-600 text-sm mt-1"></div>
+                  </div>
+                  <!-- email  -->
+                  <div class="w-[50%] max-md:w-full">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      class="w-full px-3 py-3 text-gray-700 rounded-[10px] placeholder:text-gray-700 outline-none border-2 border-indigo-800 dark:border-orange-500 dark:placeholder:text-gray-400 dark:text-gray-300 max-md:p-2 text-sm"
+                      required
+                    />
+                    <div id="email-error" class="text-red-600 text-sm mt-1"></div>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    rows="5"
+                    class="w-full px-3 py-3 text-gray-700 placeholder:text-gray-700 outline-none border-2 rounded-[10px] border-indigo-800 dark:border-orange-500 dark:text-gray-300 dark:placeholder:text-gray-400 max-md:p-2 text-sm"
+                    required
+                  ></textarea>
+                  <div id="message-error" class="text-red-600 text-sm mt-1"></div>
+                </div>
+                <button
+                  type="submit"
+                  class="text-gray-100 font-bold py-2.5 px-15 bg-indigo-900 cursor-pointer rounded-[10px] hover:bg-indigo-700 transition-all duration-500 dark:bg-orange-600 dark:text-gray-100 dark:hover:bg-orange-700 max-md:text-sm max-md:w-full"
+                >
+                  Envoyer message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer
+      class="w-full bg-white shadow-xl/10 flex flex-col items-center dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 max-lg:fixed max-lg:bottom-0 max-lg:left-0 max-lg:right-0"
+    >
+      <!-- copyright  -->
+      <div class="font-semibold py-3 dark:text-gray-200 text-center max-lg:px-2">
+        2025 &copy; - Tous droits réservés, design by WILFRIED DANIEL BOHOUSSOU
+      </div>
+    </footer>
+
+    <!-- LES SCRIPTS JS  -->
+    <!-- MODE SOMBRE ET ACTIVE SUR LIEN DE NAVBARRE  -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/darkmobile.js"></script>
+
+    <!-- ANIMATE ON SCHROLL -->
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init -->
+    <script src="/assets/js/aos.js"></script>
+
+    <!-- EMAILJS  -->
+    <!-- emailjs BIBLIOTH7QUE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- VALIDATION DU FORM  -->
+    <script src="/assets/js/validation.js"></script>
+
+    <!-- menu mobile  -->
+     <script src="/assets/js/menu-mobile.js"></script>
+  </body>
+</html>

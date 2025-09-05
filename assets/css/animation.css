@@ -1,0 +1,29 @@
+/* Animation pour le defilement des compétences (langages)*/
+@keyframes defilement {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#animate {
+    animation: defilement 50s linear infinite;
+}
+
+
+/* pour la partie contact les iicones de github et linkedin  */
+#Btn:hover #text {
+    opacity: 1;
+    max-width: 220px;
+    /* largeur max autorisée du texte */
+}
+
+/* Quand le bouton a le focus (après un clic) MAIS que la souris n'est pas dessus (:not(:hover)) */
+/* Alors cache le texte en mettant l'opacité à 0 et la largeur maximale à 0 */
+#Btn:focus:not(:hover) #text {
+    opacity: 0;
+    max-width: 0;
+}
